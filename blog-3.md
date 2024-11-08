@@ -6,7 +6,8 @@ We use Type Guard to ensure time safety at runtime. In javascript we are working
 
 ### Various Types of Type Guards and Their Use Cases ###
 
-1. **typeof**
+1. **typeof**:
+<br>
 we use this for primitive types(number,string,boolean)
 
 ```
@@ -20,7 +21,8 @@ function printValue(value: number | string) {
 ```
 
 
-2. **intype**
+2. **intype**:
+<br>
  we use this to check if a certain property exists or not in a object
 
 ```
@@ -38,8 +40,8 @@ function operate(vehicle: Car | Boat) {
 ```
 
 
-3. we can also use *custom* type guards
-
+3. we can also use *custom* type guards:
+<br>
 ```
 type Fish = { swim: () => void };
 type Bird = { fly: () => void };
