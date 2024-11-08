@@ -11,6 +11,7 @@ We use Type Guard to ensure time safety at runtime. In javascript we are working
 we use this for primitive types(number,string,boolean)
 
 ```
+
 function printValue(value: number | string) {
   if (typeof value === "string") {
     console.log("String value:", value.toUpperCase());
@@ -18,6 +19,7 @@ function printValue(value: number | string) {
     console.log("Number value:", value.toFixed(2));
   }
 }
+
 ```
 
 
@@ -42,7 +44,9 @@ function operate(vehicle: Car | Boat) {
 
 3. we can also use *custom* type guards:
 <br>
+
 ```
+
 type Fish = { swim: () => void };
 type Bird = { fly: () => void };
 
@@ -58,5 +62,20 @@ function move(animal: Fish | Bird) {
   }
 }
 
+
 ```
 here *isfish* is custom type guard
+<br>
+<br>
+
+To sum up we use type guard to narrow down the type of a variable to a more predictable & specific type, which can help us to catch errors before they occur in our code and final output. **IF** we want to use the best of typescript we need to grasp the knowledge of typeguard and its use cases.
+
+<br>
+THANK YOU 
+
+
+
+
+
+
+
